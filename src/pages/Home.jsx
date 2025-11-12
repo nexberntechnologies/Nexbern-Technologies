@@ -75,15 +75,16 @@ const Home = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="absolute inset-0 bg-gradient-to-br from-[#0b5ccf] via-[#147bf2] to-[#51b3fc]"
+            className="absolute inset-0"
           >
-            <div className="absolute inset-0 opacity-10"
+            <div className="absolute inset-0"
               style={{
                 backgroundImage: `url('${heroSlides[currentSlide].image}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}
             />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#0b5ccf]/40 via-[#147bf2]/40 to-[#51b3fc]/40" />
           </motion.div>
         </AnimatePresence>
         

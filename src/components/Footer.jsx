@@ -1,7 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -112,32 +111,32 @@ const Footer = () => {
             <div className="flex space-x-4 mt-6">
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
-                href="#"
+                href="https://www.linkedin.com/in/nexbern-technologies-247978391/"
                 className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Linkedin size={18} />
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Twitter size={18} />
-              </motion.a>
+              </motion.a> */}
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
-                href="#"
+                href="https://www.instagram.com/nexberntechnologies?igsh=cnB6NjB4bDIxanVp"
                 className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Instagram size={18} />
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Youtube size={18} />
-              </motion.a>
+              </motion.a> */}
             </div>
           </motion.div>
         </div>
